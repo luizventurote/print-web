@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font-size: 12px;
+    padding: 1.5cm 0;
+    line-height: 1.8em;
+    letter-spacing: 0.07em;
+    font-family: Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    background: #ddd;    
+}
+
+.a4 {
+    width: 21.0cm;
+    height: 29.65cm;
+}
+
+.sheet {
+    display: block;
+    padding: 1.3cm;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto 1.5cm;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #fff;
+}
+
+/* Titles */
+h2 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+p {
+    text-align: justify;
+}
+
+/* Pagination */
+.pagination {
+    right: .5cm;
+    bottom: .5cm;
+    padding: 13px 0;
+    position: absolute;
+    text-align: center;   
+}
+
+/* Align */
+.center {
+    margin: auto;
+    display: block;
+}
+
+/* Print Style */
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        padding: 0;
+    }
+
+    .sheet {
+        margin: 0;
+        page-break-after: always;
+    }
+
+}
