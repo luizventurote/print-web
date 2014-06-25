@@ -12,7 +12,7 @@ body {
     letter-spacing: 0.07em;
     font-family: Arial, sans-serif;
     text-rendering: optimizeLegibility;
-    background: #ddd;    
+    background: #d0d0d0;    
 }
 
 .a4 {
@@ -26,10 +26,10 @@ body {
     overflow: hidden;
     position: relative;
     margin: 0 auto 1.5cm;
-    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
-    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.4);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
-    -moz-border-radius: 3px;
+    -webkit-box-shadow: 0 1px 15px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 1px 15px rgba(0,0,0,0.4);
+    box-shadow: 0 1px 15px rgba(0,0,0,0.4);
+    -moz-border-radius: 15px;
     border-radius: 3px;
     background: #fff;
 }
