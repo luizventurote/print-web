@@ -39,7 +39,7 @@ body {
     height: 100%;
     overflow: hidden;
     text-align: justify;
-    /*background: #F0F0F0;*/
+    background: #F0F0F0;
 }
 
 .sheet-top {
@@ -125,6 +125,12 @@ p {
     line-height: 1.8em;
     text-align: center;
     text-transform: uppercase;
+}
+
+.cover-right-box {
+    width: 50%;
+    float: right;
+    line-height: 1.2em;
 }
 
 /* Print Style */
