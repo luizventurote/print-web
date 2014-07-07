@@ -39,7 +39,7 @@ body {
     height: 100%;
     overflow: hidden;
     text-align: justify;
-    background: #F0F0F0;
+    /*background: #F0F0F0;*/
 }
 
 .sheet-top {
@@ -133,6 +133,53 @@ p {
     line-height: 1.2em;
 }
 
+/* Table of Contents */
+.table-contents {}
+
+.table-contents .title {
+    text-align: center;
+    display: block;
+}
+
+.table-contents > ul .item-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.table-contents > ul li {
+    padding-bottom: 10px;
+}
+
+.table-contents > ul > ul .item-title {
+    font-weight: normal;
+}
+
+.table-contents > ul > ul > ul .item-title {
+    text-transform: none;
+    font-weight: bold;
+}
+
+.table-contents .item {
+    display: table;
+}
+
+.table-contents .item .item-title {
+    display: table-cell;
+    white-space: nowrap;
+    padding-right: 5px;
+}
+
+.table-contents .item .item-line {
+    width: 100%;
+    display: table-cell;
+    background: url('img/dotted.png') repeat-x;
+}
+
+.table-contents .item .item-num {
+    display: table-cell;
+    padding-left: 5px;
+}
+
 /* Print Style */
 @page {
     size: A4;
@@ -144,6 +191,7 @@ p {
     body {
         margin: 0;
         padding: 0;
+        background: transparent;
     }
 
     h2 {
@@ -153,6 +201,19 @@ p {
     .sheet {
         margin: 0;
         page-break-after: always;
+        -webkit-box-shadow: 0 0 0 rgba(0,0,0,0.4);
+        -moz-box-shadow: 0 0 0 rgba(0,0,0,0.4);
+        box-shadow: 0 0 0 rgba(0,0,0,0.4);
+        -moz-border-radius: 0;
+        border-radius: 0;
     }
 
+}
+
+/* Force Background Images And Colors */
+@media print and (color) {
+   * {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+   }
 }
