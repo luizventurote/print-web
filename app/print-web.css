@@ -98,6 +98,14 @@ h2 {
     margin-bottom: 15px;
 }
 
+h2, h3 {
+    font-size: 12pt;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-transform: none;
+}
+
+
 p {
     text-align: justify;
     padding: 6pt 0;
@@ -178,6 +186,12 @@ p {
 .table-contents .item .item-num {
     display: table-cell;
     padding-left: 5px;
+}
+
+/* Main content */
+.content-main h2 {
+    text-transform: uppercase;
+    font-weight: normal;
 }
 
 /* Print Style */
